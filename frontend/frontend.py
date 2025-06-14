@@ -19,7 +19,7 @@ def load_model():
     model.load_state_dict(torch.load("frontend/asl_model_best.pth", map_location="cpu"))
     model.eval()
     return model
-
+    
 model = load_model()
 
 # --- Class names ---
